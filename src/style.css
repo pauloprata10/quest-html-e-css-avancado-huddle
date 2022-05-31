@@ -2,7 +2,7 @@ body {
   margin: auto;
   min-height: 100vh;
   background-color: var(--violet);
-  background-image: url(/images/bg-mobile.svg);
+  background-image: url(../images/bg-mobile.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
@@ -103,7 +103,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url(/images/bg-desktop.svg);
+    background-image: url(../images/bg-desktop.svg);
     background-size: contain;
   }
 
