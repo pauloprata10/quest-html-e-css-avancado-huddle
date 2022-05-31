@@ -1,83 +1,164 @@
-body{
-  margin: 0;
-  width: 100%;
-  height: 100vh;
-  background-image: url(../images/bg-desktop.svg);
-  font-family: 'Poppins', sans-serif;
-  background-color: hsl(257, 40%, 49%);
+body {
+  margin: auto;
+  min-height: 100vh;
+  background-color: var(--violet);
+  background-image: url(/images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+h1,
+p {
   color: white;
+  text-align: center;
 }
 
-header {
-  padding: 60px 20px 0 68px;
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  padding: 0px 35px;
 }
 
-main {
-  display: flex;
-  padding: 80px;
-}
-
-.container {
-  padding: 20px 20px 60px 60px;
-}
-
-.heading {
-  font-family: 'Poppins', sans-serif;
-  font-size: 38px
-}
-
-.reg-button {
-  border: 0;
-  border-radius: 25px;
-  width: 190px;
-  height: 50px;
+p {
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  color: hsl(257, 40%, 49%); 
-  box-shadow: 0px 8px 15px black; 
+  padding: 0px 35px;
+  line-height: 25px;
 }
 
-.reg-button:hover {
+.huddle-logo {
+  width: 130px;
+  padding: 35px 0px 55px 32px;
+}
+
+.ilustracao {
+  width: 300px;
+  display: block;
+  margin: auto;
+  padding: 0px 0px 35px 0px;
+}
+
+.btn-registro {
+  display: block;
+  margin: auto;
+  padding: 12px 80px;
+  border: solid white 1px;
+  border-radius: 50px;
+  font-family: "Open Sans", sans-serif;
+  color: var(--violet);
+  margin-top: 25px;
+  margin-bottom: 70px;
+  box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.315);
+}
+
+.btn-registro:hover {
+  background-color: var(--soft-magenta);
+  border: solid 1px var(--soft-magenta);
+  color: white;
   cursor: pointer;
-  background-color: hsl(300, 69%, 71%);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.f-button,
+.t-button,
+.i-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid 1px white;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 16px;
+  color: white;
+  margin-right: 10px;
+}
+
+.f-button:hover,
+.t-button:hover,
+.i-button:hover {
+  border: solid 1px var(--soft-magenta);
+  cursor: pointer;
+  color: var(--soft-magenta);
+}
+
+.atribuicao {
+  position: relative;
+  top: 40px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.atribuicao a {
   color: white;
 }
 
-@media(max-width: 375px){
-  body{
-      background-image: url(../images/bg-mobile.svg);
+@media (min-width: 900px) {
+  body {
+    margin: 0px 60px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(/images/bg-desktop.svg);
+    background-size: contain;
   }
-  header{
-      padding: 40px 0 40px 40px;
+
+  h1,
+  p {
+    text-align: left;
   }
-  header img{
-      width: 120px;
+
+  h1 {
+    font-size: 38px;
   }
-  main{
-      flex-direction: column; 
-      padding: 0;
+
+  p {
+    font-size: 17px;
   }
-  .img-container{
-      display: flex;
-      justify-content: center;
-  }
-  .img-container img{
-      width: 80%;
-  }
+
   .container {
-      margin-top: 40px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 0 50px 0 50px;
-      text-align: center;
-      align-items: center;
+    display: flex;
+    flex-direction: row;
   }
-  .heading{
-      font-size: x-large;
+
+  .huddle-logo {
+    width: 190px;
+    position: relative;
+    left: -35px;
+    top: -10px;
   }
-  .text-info{
-      font-size: smaller;
-      margin: 0 0 24px;
+
+  .ilustracao {
+    width: 680px;
+    position: relative;
+    top: 15px;
+  }
+
+  .painel-direito {
+    padding: 175px 60px 0px 20px;
+  }
+
+  .btn-registro {
+    font-size: 18px;
+    padding: 15px 60px;
+    display: block;
+    margin: 25px 0px 0px 35px;
+  }
+
+  .social-icons {
+    position: relative;
+    top: 160px;
+    padding-left: 370px;
+  }
+
+  .f-button,
+  .t-button,
+  .i-button {
+    margin-right: 15px;
   }
 }
 
